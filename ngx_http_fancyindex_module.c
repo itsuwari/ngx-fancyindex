@@ -1478,7 +1478,7 @@ ngx_http_fancyindex_merge_loc_conf(ngx_conf_t *cf, void *parent, void *child)
     ngx_conf_merge_value(conf->exact_size, prev->exact_size, 1);
     ngx_conf_merge_value(conf->show_path, prev->show_path, 1);
     ngx_conf_merge_value(conf->show_dot_files, prev->show_dot_files, 0);
-    ngx_conf_merge_uint_value(conf->name_length, prev->name_length, 50);
+    ngx_conf_merge_uint_value(conf->name_length, prev->name_length, 500);
 
     ngx_conf_merge_str_value(conf->header.path, prev->header.path, "");
     ngx_conf_merge_str_value(conf->header.path, prev->header.local, "");
